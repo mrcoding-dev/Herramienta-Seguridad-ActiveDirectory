@@ -1,0 +1,44 @@
+@import 'instantsearch.css/themes/satellite.css';
+
+
+
+$ais-input-reset-font-size: 16px;
+$ais-highlight-color: red;
+
+
+
+
+
+.hit-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+}
+.hit-title {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.hit-details {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  color: #666;
+
+  .hit-rut,
+  .hit-usernt,
+  .hit-empresa {
+    margin-right: 20px;
+
+    strong {
+      display: block;
+      font-size: 12px;
+      color: #999;
+      margin-bottom: 5px;
+    }
+  }
+}
