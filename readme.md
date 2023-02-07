@@ -39,14 +39,12 @@
   <p align="center">
     Memoria de título presentada a la Facultad de Ingeniería de la Universidad Finis Terrae, para optar al título de ingeniero civil en informática y telecomunicaciones
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Ver documentacion »</strong></a>
+    <a href="https://mrcoding-dev.github.io/Herramienta-Seguridad-ActiveDirectory-DOC/"><strong>Ver documentacion »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">Ver demo</a>
+    <a href="https://github.com/mrcoding-dev/Herramienta-Seguridad-ActiveDirectory/issues">Reportar bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Reportar bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Solicitar una caracteristica</a>
+    <a href="https://github.com/mrcoding-dev/Herramienta-Seguridad-ActiveDirectory/issues">Solicitar una caracteristica</a>
   </p>
 </div>
 
