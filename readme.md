@@ -194,7 +194,7 @@ Este repositorio proporciona una herramienta de seguridad de ActiveDirectory que
 _Para una explicacion detallada revisa [Documentacion](https://mrcoding-dev.github.io/Herramienta-Seguridad-ActiveDirectory-DOC/)_
 
 
-<img src="img/img.png" width="800" height="500">
+<img src="img/frontend.png" width="800" height="500">
 <h1/>
 <img src="img/img_1.png" width="500" height="500">
 
