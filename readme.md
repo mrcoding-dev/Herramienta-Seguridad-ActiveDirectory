@@ -101,8 +101,6 @@ Estos son los requesitos para correr el sistema
 - XlsxWriter==3.0.8
 ### Instalacion
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
 1. Obten tu api de [https://www.algolia.com/es/](https://www.algolia.com/es/)
 2. En la vdi o servidor de windows server
    ```sh
