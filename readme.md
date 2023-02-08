@@ -1,14 +1,5 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 <!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -23,7 +14,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 
 
@@ -50,31 +41,7 @@
 
 
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+
 
 
 
@@ -159,7 +126,34 @@ _Below is an example of how you can instruct your audience on installing and set
     index_id=dev_?????
     DIAS_DESUSO=90
    ```
-5. Frontend
+   
+5. Ejecutar codigo en backend
+Existen 3 formas de ejecutar el codigo del backend, primeramente puedes hacerlo simplemente con 
+
+   ```sh
+   python app.py
+   ```
+De esta forma sera ejecutada 1 vez, es de manera manual, la otra forma es con un cron, el cual en el archivo
+
+   ```sh
+   backend/month.py
+   ```
+
+En la linea 13 puedes configurar mediante la libreria schedule cuando y como ejecutar tu codigo programado mas informacion [aqui](https://schedule.readthedocs.io/en/stable/) 
+
+Y la ultima forma es mediante una api, la cual se puede agregar mas rutas y personalizar en
+
+   ```sh
+   backend/main.py
+   ```
+Para ejecutarlo simplemente se debe ejecutar en  la terminal
+
+   ```sh
+   uvicorn main:app --reload
+   ```
+y este servidor se ejecutara en el http://127.0.0.1:8000
+
+6. Frontend
 
    ```sh
    git clone https://github.com/mrcoding-dev/Herramienta-Seguridad-ActiveDirectory/tree/main/frontend
@@ -197,8 +191,12 @@ Este repositorio proporciona una herramienta de seguridad de ActiveDirectory que
 Este repositorio proporciona una herramienta de seguridad de ActiveDirectory que puede ser consumida desde cualquier servidor gracias a su conexión con la API de Algolia. Para usarla, es necesario instalar Python y las dependencias en un servidor Windows Server. La herramienta se puede utilizar de 3 maneras: como una API, como una ejecución única o como una tarea programada que se ejecutará cada X días con un cron/schedule.
 
 
-_Para una explicacion detallada revisa [Documentation](https://example.com)_
+_Para una explicacion detallada revisa [Documentacion](https://mrcoding-dev.github.io/Herramienta-Seguridad-ActiveDirectory-DOC/)_
 
+
+<img src="img/img.png" width="800" height="500">
+<h1/>
+<img src="img/img_1.png" width="500" height="500">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
