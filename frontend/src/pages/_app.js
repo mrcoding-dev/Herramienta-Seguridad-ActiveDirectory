@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
       <Navbar
         color="white"
         spaced={true}
-        logo="https://res.cloudinary.com/dimsv0hrt/image/upload/v1670775063/so_proyecto/gs_x57glf.png"
+        logo="https://static.vecteezy.com/system/resources/previews/005/499/947/original/creative-rectangle-3d-shapes-logo-modern-business-company-free-vector.jpg"
       />
 
       <Component {...pageProps} />
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
         backgroundImage=""
         backgroundImageOpacity={1}
         copyright={`© ${new Date().getFullYear()} Company`}
-        logo="https://res.cloudinary.com/dimsv0hrt/image/upload/v1670775063/so_proyecto/gs_x57glf.png"
+        logo="https://static.vecteezy.com/system/resources/previews/005/499/947/original/creative-rectangle-3d-shapes-logo-modern-business-company-free-vector.jpg"
       />
     </>
   );
