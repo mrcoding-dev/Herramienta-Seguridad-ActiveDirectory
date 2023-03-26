@@ -47,152 +47,74 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Sobre el proyecto
-Este proyecto es un sistema automatizado de gestión de cuentas en desuso de Active Directory.
-Incluye un script que monitorea continuamente las cuentas en busca de las que hayan pasado una fecha límite sin ser usadas, y automáticamente desactiva las cuentas encontradas.
-Además, cuenta con un sistema de notificaciones para enviar un correo electrónico al final del mes con una lista de las cuentas que se dieron de baja, y una interfaz web que permite visualizar en tiempo real las cuentas que se dieron de baja a través de un identificador único como el RUT o el nombre de usuario.
-Este sistema ayuda a mejorar la eficiencia en la gestión de cuentas, proporciona una mejor fluctuación de la información, es más rápido y fácil de implementar al ser un desarrollo focalizado en un proceso y ahorra un recurso entero para ser utilizado en otras labores.
+La herramienta de gestión de cuentas en desuso en Active Directory es un software open source desarrollado como resultado de un trabajo de titulación centrado en mejorar la ciberseguridad en el entorno empresarial. El software fue diseñado específicamente para abordar las necesidades y problemas de la empresas en relación con la gestión manual de cuentas en desuso, lo que permitió mejorar la eficiencia y reducir las brechas de seguridad asociadas con la gestión de cuentas en desuso.
 
-Una vez la herramienta de seguridad de Active Directory está configurada, el sistema automatizado de gestión de cuentas puede ser ejecutado en el entorno. Esto permite que el sistema monitoree el uso de cuentas en tiempo real para detectar posibles amenazas de seguridad. Además, se recomienda ejecutar el script de monitoreo de cuentas cada mes o de acuerdo a lo establecido por las policitas de seguridad de la organizacion, para asegurar que solo las cuentas activas sean consideradas dentro del sistema. El sistema también debe configurarse para enviar notificaciones de correo electrónico al final del mes para informar sobre el estado de cuentas en desuso. Esto le permite a los administradores monitorear el uso de cuentas y asegurar que solo los usuarios autorizados tengan acceso. Finalmente, la interfaz web del sistema proporciona una forma sencilla de visualizar la información sobre las cuentas desactivadas, lo que le permite a los administradores comprobar el uso de cuentas y asegurar que el sistema está seguro.
-
+Al ser open source, la herramienta puede ser adaptada e implementada en diferentes entornos empresariales para mejorar la ciberseguridad y prevenir pérdidas económicas asociadas con los ciberataques. Además, la creación de este software sienta las bases para futuros desarrollos de productos digitales de ciberseguridad que puedan adaptarse a diferentes entornos empresariales y contribuir a la mejora continua de la ciberseguridad en el ámbito corporativo. En resumen, la herramienta de gestión de cuentas en desuso en Active Directory es una contribución valiosa al campo de la ciberseguridad y representa un paso importante hacia una mejor protección de los activos digitales en el entorno empresarial.
 
 <!-- GETTING STARTED -->
 ## Primeros pasos
 
-Para instalar este sistema, necesitas tener Node.js y Python instalados en tu computadora. Continúa siguiendo las instrucciones en el repositorio para configurar y ejecutar la herramienta de seguridad de Active Directory en tu entorno 
+Si quieres compilar este sistema, necesitas tener Node.js, Tauri, Rust y Python instalados en tu computadora. Continúa siguiendo las instrucciones en el repositorio para configurar y ejecutar la herramienta de seguridad de Active Directory en tu entorno 
 
-### Prerrequisitos
+### Dependencias para compilarcion y desarrollo
 
-Estos son los requesitos para correr el sistema
-* node
-  ```sh
-  choco install nodejs.install
-  ```
-  
-* python
-  ```sh
-  npm install npm@latest -g
-  ```
 * dependencias python
 
-- algoliasearch==2.6.3
+- altgraph==0.17.3
 - anyio==3.6.2
-- asgiref==3.6.0
 - certifi==2022.12.7
-- charset-normalizer==3.0.1
-- Django==4.1.6
-- django-scheduler==0.10.1
-- fastapi==0.90.0
+- charset-normalizer==3.1.0
+- click==8.1.3
+- colorama==0.4.6
+- fastapi==0.94.1
 - future==0.18.3
-- icalendar==5.0.4
+- h11==0.14.0
 - idna==3.4
+- numpy==1.24.2
+- pandas==1.5.3
+- pefile==2023.2.7
 - pyad==0.6.0
-- pydantic==1.10.4
+- pydantic==1.10.6
+- pyinstaller==5.9.0
+- pyinstaller-hooks-contrib==2023.1
 - python-dateutil==2.8.2
-- python-dotenv==0.21.1
+- python-dotenv==1.0.0
 - pytz==2022.7.1
+- pywin32==305
+- pywin32-ctypes==0.2.0
 - requests==2.28.2
 - six==1.16.0
 - sniffio==1.3.0
-- sqlparse==0.4.3
-- starlette==0.23.0
-- typing_extensions==4.4.0
-- tzdata==2022.7
-- urllib3==1.26.14
-- XlsxWriter==3.0.8
-### Instalacion
+- starlette==0.26.1
+- typing_extensions==4.5.0
+- urllib3==1.26.15
+- uvicorn==0.21.1
+- XlsxWriter==3.0.9
 
-1. Obten tu api de [https://www.algolia.com/es/](https://www.algolia.com/es/)
-2. En la vdi o servidor de windows server
-   ```sh
-   git clone https://github.com/mrcoding-dev/Herramienta-Seguridad-ActiveDirectory/tree/main/backend
-   ```
-3. Instala los paquetes de pip
-   ```sh
-   pip install -r requirements.txt
-   ```
-4. Configura las variables de entorno
-   ```makefile
-    SENDER_MAIL=yourmail@zohomail.com
-    SENDER_PASSWORD=password
-    SENDER_SMTP=smtp.zoho.com
-    SENDER_PORT=465
-    RECIEVER_SMTP=reciever2@gmail.com,reciever1@gmail.com
-    COMPANYS_NAME=Empresa1 S.A.,Empresa 2,Empresa 3 S.A.
-    LOGO_COMPANY=https://www.webgenerica.cl/assets/img/empresa/logos/logo-5fda3aab9726b.jpg,https://www.webgenerica.cl/assets/img/empresa/logos/logo-5fda3aab9726b.jpg,https://www.webgenerica.cl/assets/img/empresa/logos/logo-5fda3aab9726b.jpg
-    app_id=9W91AT????
-    api_key =057820d68????????7d89739468
-    index_id=dev_?????
-    DIAS_DESUSO=90
-   ```
-   
-5. Ejecutar codigo en backend
-Existen 3 formas de ejecutar el codigo del backend, primeramente puedes hacerlo simplemente con 
+_Si quieres ver toda la documentacion de como compilar, ejecutar y desarrolar para aportar el sistema revisa la [Documentacion](https://mrcoding-dev.github.io/Herramienta-Seguridad-ActiveDirectory-DOC/)_
 
-   ```sh
-   python app.py
-   ```
-De esta forma sera ejecutada 1 vez, es de manera manual, la otra forma es con un cron, el cual en el archivo
 
-   ```sh
-   backend/month.py
-   ```
+### Instalacion de sistema (Cliente)
 
-En la linea 13 puedes configurar mediante la libreria schedule cuando y como ejecutar tu codigo programado mas informacion [aqui](https://schedule.readthedocs.io/en/stable/) 
+1. Descarga el instalador desde [Ejecutable](https://github.com/mrcoding-dev/Herramienta-Seguridad-ActiveDirectory/releases/tag/estable)
+2. Ejecuta el instalador en la vdi o servidor de windows server o una maquina con permisos de lectura conectada a la red
+3. Sigue los pasos de instalacion
 
-Y la ultima forma es mediante una api, la cual se puede agregar mas rutas y personalizar en
-
-   ```sh
-   backend/main.py
-   ```
-Para ejecutarlo simplemente se debe ejecutar en  la terminal
-
-   ```sh
-   uvicorn main:app --reload
-   ```
-y este servidor se ejecutara en el http://127.0.0.1:8000
-
-6. Frontend
-
-   ```sh
-   git clone https://github.com/mrcoding-dev/Herramienta-Seguridad-ActiveDirectory/tree/main/frontend
-   ```
-   
-En la siguiente ruta agrega la api key de algolia en la linea 6
-
-   ```sh
-  src\components\Buscador.js
-   ```
-
-   ```js
-const searchClient = algoliasearch('APP_ID','API_KEY');
-   ```
-
-Y en la linea 40 agrega tu index name
-   ```js
-<InstantSearch searchClient={searchClient} indexName="YOUR_INDEX" >
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-Finalmente solo ejecuta donde va a ser el servidor cliente
-
-   ```sh
-  npm run dev
-   ```
-O si deseas subirlo a produccion
-   ```sh
-  npm run build
-   ```
 ## Uso
 
-Este repositorio proporciona una herramienta de seguridad de ActiveDirectory que puede ser consumida desde cualquier servidor gracias a su conexión con la API de Algolia. Para usarla, es necesario instalar Python y las dependencias en un servidor Windows Server. La herramienta se puede utilizar de 3 maneras: como una API, como una ejecución única o como una tarea programada que se ejecutará cada X días con un cron/schedule.
-Este repositorio proporciona una herramienta de seguridad de ActiveDirectory que puede ser consumida desde cualquier servidor gracias a su conexión con la API de Algolia. Para usarla, es necesario instalar Python y las dependencias en un servidor Windows Server. La herramienta se puede utilizar de 3 maneras: como una API, como una ejecución única o como una tarea programada que se ejecutará cada X días con un cron/schedule.
+![img.png](img.png)
+
+![img_1.png](img_1.png)
+
+![img_2.png](img_2.png)
+
+![img_3.png](img_3.png)
+
+![img_4.png](img_4.png)
 
 
-_Para una explicacion detallada revisa [Documentacion](https://mrcoding-dev.github.io/Herramienta-Seguridad-ActiveDirectory-DOC/)_
 
-
-<img src="img/frontend.png" width="800" height="500">
+![img_5.png](img_5.png)
 <h1/>
 <img src="img/img_1.png" width="500" height="500">
 
