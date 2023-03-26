@@ -1,26 +1,25 @@
 {
-  "name": "buscador-ad",
-  "version": "0.1.0",
-  "private": true,
-  "keywords": [
-    "api"
-  ],
-  "dependencies": {
-    "algoliasearch": "^4.14.2",
-    "bulma": "0.9.3",
-    "instantsearch.css": "^7.4.5",
-    "next": "12.2.5",
-    "next-instantsearch": "^0.3.15",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-hook-form": "6.15.1",
-    "react-instantsearch-dom": "^6.38.1",
-    "react-instantsearch-hooks-web": "^6.38.1",
-    "sass": "1.32.13"
-  },
+  "name": "fragrant-lumbering-owl",
+  "version": "1.0.0",
+  "description": "A frontend of open source software",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "next",
+    "build": "next build && next export",
+    "start": "next start",
+    "export": "next export"
+  },
+  "author": "Mrcoding",
+  "license": "MIT",
+  "dependencies": {
+    "@lottiefiles/lottie-player": "1.6.0",
+    "@tauri-apps/api": "^1.2.0",
+    "axios": "^1.3.4",
+    "next": "^12.1.0",
+    "notiflix": "^3.2.6",
+    "prop-types": "15.7.2",
+    "react": "^17.0.2",
+    "react-confirm-alert": "2.8.0",
+    "react-dom": "^17.0.2"
   }
 }

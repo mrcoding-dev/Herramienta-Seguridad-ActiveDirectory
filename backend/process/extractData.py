@@ -1,11 +1,7 @@
 from pyad import aduser,adquery,pyad,pyadutils
 import datetime
-import accounts
-def readEnv():
-    from dotenv import load_dotenv
-    import os
-    load_dotenv()
-    return os.getenv("app_id"), os.getenv("api_key"), os.getenv("index_id")
+
+
 
 def extractLeadership(usernt):
     q = adquery.ADQuery()
