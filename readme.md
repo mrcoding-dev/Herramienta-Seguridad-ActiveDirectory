@@ -28,7 +28,7 @@
 <h3 align="center">Procesador de Cuentas en Desuso Active Directory</h3>
 
   <p align="center">
-    Memoria de título presentada a la Facultad de Ingeniería de la Universidad Finis Terrae, para optar al título de ingeniero civil en informática y telecomunicaciones
+   
     <br />
     <a href="https://mrcoding-dev.github.io/Herramienta-Seguridad-ActiveDirectory-DOC/"><strong>Ver documentacion »</strong></a>
     <br />
