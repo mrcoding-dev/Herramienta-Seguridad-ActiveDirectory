@@ -20,24 +20,20 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/ESCUDO-UFT.png" alt="Logo" width="80" height="80">
-  </a>
+<div style="text-align: center;">
 
-<h3 align="center">Procesador de Cuentas en Desuso Active Directory</h3>
+  <h3 style="margin-bottom: 15px;">Procesador de Cuentas en Desuso Active Directory</h3>
 
-  <p align="center">
-   
-    <br />
+  <p style="line-height: 1.8;">
     <a href="https://mrcoding-dev.github.io/Herramienta-Seguridad-ActiveDirectory-DOC/"><strong>Ver documentacion »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/mrcoding-dev/Herramienta-Seguridad-ActiveDirectory/issues">Reportar bug</a>
-    ·
-    <a href="https://github.com/mrcoding-dev/Herramienta-Seguridad-ActiveDirectory/issues">Solicitar una caracteristica</a>
+    <a href="https://github.com/mrcoding-dev/Herramienta-Seguridad-ActiveDirectory/issues" style="margin-right: 5px;">Reportar bug</a>
+    <span style="margin: 0 5px;">·</span>
+    <a href="https://github.com/mrcoding-dev/Herramienta-Seguridad-ActiveDirectory/issues" style="margin-left: 5px;">Solicitar una caracteristica</a>
   </p>
+
 </div>
+
 
 
 
@@ -47,7 +43,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Sobre el proyecto
-La herramienta de gestión de cuentas en desuso en Active Directory es un software open source desarrollado como resultado de un trabajo de titulación centrado en mejorar la ciberseguridad en el entorno empresarial. El software fue diseñado específicamente para abordar las necesidades y problemas de la empresas en relación con la gestión manual de cuentas en desuso, lo que permitió mejorar la eficiencia y reducir las brechas de seguridad asociadas con la gestión de cuentas en desuso.
+La herramienta de gestión de cuentas en desuso en Active Directory es un software open source. El software fue diseñado específicamente para abordar las necesidades y problemas de la empresas en relación con la gestión manual de cuentas en desuso, lo que permitió mejorar la eficiencia y reducir las brechas de seguridad asociadas con la gestión de cuentas en desuso.
 
 Al ser open source, la herramienta puede ser adaptada e implementada en diferentes entornos empresariales para mejorar la ciberseguridad y prevenir pérdidas económicas asociadas con los ciberataques. Además, la creación de este software sienta las bases para futuros desarrollos de productos digitales de ciberseguridad que puedan adaptarse a diferentes entornos empresariales y contribuir a la mejora continua de la ciberseguridad en el ámbito corporativo. En resumen, la herramienta de gestión de cuentas en desuso en Active Directory es una contribución valiosa al campo de la ciberseguridad y representa un paso importante hacia una mejor protección de los activos digitales en el entorno empresarial.
 
